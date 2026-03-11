@@ -1,0 +1,42 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# C# project files
+*.cs     text diff=csharp
+*.csproj text merge=union
+*.sln    text merge=union eol=crlf
+
+# Visual Studio files
+*.vspscc text eol=crlf
+*.vssscc text eol=crlf
+
+# Images
+*.png    binary
+*.jpg    binary
+*.ico    binary
+
+# Binary files
+*.dll    binary
+*.exe    binary
+*.pdb    binary
+
+# Always use LF line endings for these files
+*.sh     text eol=lf
+
+# Always use CRLF line endings for these files
+*.bat    text eol=crlf
+*.cmd    text eol=crlf
+
+# Markdown files
+*.md     text diff=markdown
+
+# XML files
+*.xml    text
+*.config text
+*.settings text
+
+# JSON files
+*.json   text
+
+# Solution files
+*.sln    text eol=crlf
